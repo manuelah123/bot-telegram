@@ -1,0 +1,95 @@
+{
+  "name": "Telegram News Bot",
+  "nodes": [
+    {
+      "parameters": {
+        "updates": [
+          "message"
+        ],
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegramTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -32,
+        0
+      ],
+      "id": "4943ee20-9358-4982-afe7-99a3dbc6c057",
+      "name": "Telegram Trigger",
+      "webhookId": "e32c972e-228f-4e2f-896c-b19267ed1204",
+      "alwaysOutputData": false,
+      "executeOnce": false,
+      "credentials": {}
+    },
+
+    {
+      "parameters": {
+        "url": "https://gnews.io/api/v4/search",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "q",
+              "value": "={{ $json.Tema }}"
+            },
+            {
+              "name": "lang",
+              "value": "es"
+            },
+            {
+              "name": "max",
+              "value": "5"
+            },
+            {
+              "name": "apikey",
+              "value": "YOUR_GNEWS_API_KEY"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        416,
+        0
+      ],
+      "id": "1bafe075-3eb6-4dd7-962a-19bbd39795d7",
+      "name": "HTTP Request"
+    },
+
+    {
+      "parameters": {
+        "model": "groq/compound-mini",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGroq",
+      "typeVersion": 1,
+      "position": [
+        672,
+        288
+      ],
+      "id": "8544eea5-74c4-4093-a42e-d8f15974c3f2",
+      "name": "Groq Chat Model",
+      "credentials": {}
+    },
+
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').first().json.message.chat.id }}",
+        "text": "={{ $json.text }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        1056,
+        0
+      ],
+      "id": "9f607e6f-a9e5-48da-a0e2-566bd8ed4ad9",
+      "name": "Send Telegram Message",
+      "webhookId": "6ed08ecf-feda-4c91-a770-c8f5339a0790",
+      "credentials": {}
+    }
+  ]
+}
