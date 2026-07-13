@@ -31,7 +31,7 @@ Usuario
 
 > Agrega la captura en `imagen.png`.
 
-```![Flujo n8n](image.png)
+```![Flujo del proyecto](https://raw.githubusercontent.com/manuelah123/bot-telegram/main/image.png)
 ```
 
 ## Tecnologías
