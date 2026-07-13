@@ -31,8 +31,7 @@ Usuario
 
 > Agrega la captura en `imagen.png`.
 
-```markdown
-![Flujo n8n](imagen.png)
+```![Flujo n8n](image.png)
 ```
 
 ## Tecnologías
