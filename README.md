@@ -29,10 +29,7 @@ Usuario
 
 ## Flujo del proyecto
 
-> Agrega la captura en `imagen.png`.
-
-```![Flujo del proyecto](https://raw.githubusercontent.com/manuelah123/bot-telegram/main/image.png)
-```
+![Flujo del proyecto](https://raw.githubusercontent.com/manuelah123/bot-telegram/main/image.png)
 
 ## Tecnologías
 
