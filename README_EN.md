@@ -1,5 +1,4 @@
-# 📰 Intelligent News Search and Automatic Summarization System using n8n and AI
-
+#  Intelligent News Search and Automatic Summarization System using n8n and AI
 
 ## Description
 
