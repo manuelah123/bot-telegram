@@ -1,6 +1,5 @@
-# 📰 Sistema Inteligente de Búsqueda y Resumen Automático de Noticias usando n8n e IA
+#  Sistema Inteligente de Búsqueda y Resumen Automático de Noticias usando n8n e IA
 
-[🇺🇸 English](README_EN.md)
 
 ## Descripción
 
@@ -30,10 +29,10 @@ Usuario
 
 ## Flujo del proyecto
 
-> Agrega la captura en `docs/flujo-n8n.png`.
+> Agrega la captura en `imagen.png`.
 
 ```markdown
-![Flujo n8n](docs/flujo-n8n.png)
+![Flujo n8n](imagen.png)
 ```
 
 ## Tecnologías
@@ -150,6 +149,11 @@ Resumen:
 
 Proyecto académico y de portafolio. Requiere configurar credenciales antes de ejecutarse.
 
-## Licencia
+# Autor
+**Manuela Henao Bedoya**
 
-MIT
+# Licencia
+**Este proyecto está bajo la licencia MIT.**
+
+
+
