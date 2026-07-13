@@ -1,6 +1,5 @@
 # 📰 Intelligent News Search and Automatic Summarization System using n8n and AI
 
-[🇪🇸 Español](README.md)
 
 ## Description
 
@@ -33,7 +32,7 @@ User
 Add your screenshot to:
 
 ```text
-docs/flujo-n8n.png
+![Flujo n8n](image.png)
 ```
 
 ## Technologies
