@@ -31,9 +31,9 @@ User
 
 Add your screenshot to:
 
-```text
-![Flujo n8n](image.png)
-```
+## Project Workflow
+
+![Flujo del proyecto](https://raw.githubusercontent.com/manuelah123/bot-telegram/main/image.png)
 
 ## Technologies
 
